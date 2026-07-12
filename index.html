@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WiFi Security Auditor - rahuldhiman.in</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>WiFi Security Auditor</h1>
+    <p class="watermark">rahuldhiman.in</p>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Current Website Security</h2>
+      <div class="result">
+        <p><strong>Protocol:</strong> <span id="protocol">Checking...</span></p>
+        <p><strong>Connection:</strong> <span id="connection">Checking...</span></p>
+        <p><strong>Browser:</strong> <span id="browser"></span></p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Password Strength Checker</h2>
+      <input type="password" id="passwordInput" placeholder="Enter a password">
+      <button id="checkBtn">Check Strength</button>
+      <div class="strength-bar"><div id="strengthFill"></div></div>
+      <p id="strengthText">Enter a password to test.</p>
+    </section>
+
+    <section class="card">
+      <h2>Security Score</h2>
+      <div class="score-circle">
+        <span id="score">0</span>
+      </div>
+      <ul id="reasons"></ul>
+    </section>
+
+    <section class="card">
+      <h2>Scan History</h2>
+      <ul id="history"></ul>
+    </section>
+
+    <section class="card">
+      <h2>Export Report</h2>
+      <button id="exportBtn">Download Report</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>Educational Cyber Security Project • Powered by rahuldhiman.in</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
